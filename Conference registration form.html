@@ -11,25 +11,32 @@
     <!--Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&family=Special+Elite&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div>
         <h1>Conference Registration Form</h1>
         <form>
-            <label for="registrant-name" name="current-name">Registrant's Name: </label>
-            <input required id="registrant-name" name="current-name" maxlength="70" type="text">
-            <br>
-            <br>
-            <label for="registrant-password" name="current-password">Password: </label>
-            <input required id="registrant-password" name="current-password" type="password">
-            <br>
-            <br>
-            <label for="registrant-email" name="current-email">Email</label>
-            <input required id="registrant-email" name="current-email" type="email">
-            <br>
-            <br>
+            <div class="mb-3">
+                <label for="registrant-name" name="current-name">Registrant's Name: </label>
+                <input required id="registrant-name" name="current-name" maxlength="70" type="text">
+                <br>
+                <br>
+            </div>
+            <div class="mb-3">
+                <label for="registrant-password" name="current-password">Password: </label>
+                <input required id="registrant-password" name="current-password" type="password">
+                <br>
+                <br>
+            </div>
+            <div class="mb-3">
+                <label for="registrant-email" name="current-email">Email</label>
+                <input required id="registrant-email" name="current-email" type="email">
+                <br>
+                <br>
+            </div>
             <div>
                 <label for="shirt-size"><strong>T-shirt size:</strong> (All attendees receive a free
                     t-shirt.)</label>
