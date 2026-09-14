@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conference Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <h1>Conference Registration Form</h1>
+        <form>
+            <label for="registrant-name" name="current-name">Registrant's Name: </label>
+            <input required id="registrant-name" name="current-name" maxlength="70" type="text">
+            <br>
+            <br>
+            <label for="registrant-password" name="current-password">Password: </label>
+            <input required id="registrant-password" name="current-password" type="password">
+            <br>
+            <br>
+            <label for="registrant-email" name="current-email">Email</label>
+            <input required id="registrant-email" name="current-email" type="email">
+            <br>
+            <br>
+            <div>
+                <label for="shirt-size"><strong>T-shirt size:</strong> (All attendees receive a free
+                    t-shirt.)</label>
+                <br>
+                <br>
+                <select required id="shirt-size" name="shirt_size">
+                    <option value="" disabled selected></option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+            <br>
+
+            <div>
+                <label for="birthday">Date of Birth (Required):</label>
+                <input required id="birthday" type="date" name="current-birthday">
+            </div>
+
+            <br>
+            <label name="receive-email">Do you want to receive email from conference sponsors?</label>
+            <br>
+
+            <label for="email-yes"></label>
+            <input required id="email-yes" name="receive-email" type="radio">Yes
+
+            <label for="email-no"></label>
+            <input required id="email-no" name="receive-email" type="radio">No
+            <br>
+
+            <div>
+                <p>Choose sessions: (morning and/or afternoon conference sessions)</p>
+                <input type="checkbox" id="morning" name="morning-session">
+                <label for="morning">The Morning Session</label>
+
+                <input type="checkbox" id="afternoon" name="afternoon-session">
+                <label for="afternoon">The Afternoon Session</label>
+            </div>
+            <br>
+
+            <div>
+                <label for="special-requests" name="requests" >Special Requests: </label>
+                <br>
+                <br>
+                <textarea id="special-requests" name="requests" rows="7" cols="70"></textarea>
+            </div>
+        <br>
+        <input type="submit">
+
+    </div>
+
+    </form>
+</body>
+
+</html>
