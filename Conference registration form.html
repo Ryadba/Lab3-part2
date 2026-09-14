@@ -4,7 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Conference Registration Form</title>
+    <!--bootstrap 5-->
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <!--CSS styles-->
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -45,7 +52,7 @@
             <br>
             <label name="receive-email">Do you want to receive email from conference sponsors?</label>
             <br>
-
+            <br>
             <label for="email-yes"></label>
             <input required id="email-yes" name="receive-email" type="radio">Yes
 
@@ -64,16 +71,14 @@
             <br>
 
             <div>
-                <label for="special-requests" name="requests" >Special Requests: </label>
+                <label for="special-requests" name="requests">Special Requests: </label>
                 <br>
                 <br>
                 <textarea id="special-requests" name="requests" rows="7" cols="70"></textarea>
             </div>
-        <br>
-        <input type="submit">
-
+            <br>
+            <input type="submit">
     </div>
-
     </form>
 </body>
 
