@@ -4,40 +4,71 @@
 <head>
   <meta charset="UTF-8">
   <title>Hello Forms</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!--bootstrap 5.3.9-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- styles.css -->
+  <link rel="stylesheet" type="text/css" href="feedback-styles.css">
 </head>
 
 <body>
-  <div>
-    <h1>Please provide feedback. (You may do so anonymously.)</h1>
-    <form>
-      <label for="feedback-n" name="current-name">Name</label>
-      <input id="feedback-n" name="current-name" type="text">
-      <br>
-      <label for="feedback-e" name="current-email">Email</label>
-      <input id="feedback-e" name="current-email" type="email">
-      <br>
-      <label for="feedback-t" name="current-comments">Comments</label>
-      <br>
-      <textarea required id="feedback-t" name="current-comments"></textarea>
-      <br>
+  <div class="container">
+    <div class="bg-primary-subtle m-2 p-4 rounded-3 text-center">
+      <h1>Please provide feedback. (You may do so anonymously.)</h1>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-5">
+        <h2>Instructions</h2>
+
+        <p>As one of our students, your thoughts, feedback and comments are important to us.</p>
+        <p>Please send them using this form.</p>
+        <p>If you would like us to follow up with you, include your contact information.</p>
+      </div> <!-- End of first instructions col div -->
+
+      <div class="col-md-7">
+        <form>
+          <label for="feedback-n" name="current-name">Name</label>
+          <input class="form-control" id="feedback-n" name="current-name" type="text">
+
+          <br>
+          <label for="feedback-e" name="current-email">Email</label>
+          <input class="form-control" id="feedback-e" name="current-email" type="email">
+
+          <br>
+          <label class="form-label" for="feedback-t" name="current-comments">Comments</label>
+          <br>
+          <textarea class="form-control" required id="feedback-t" name="current-comments"></textarea>
+          <br>
+
+          <div class="m-2 p-4">
+            <br>
+            <label class="m-2" name="current-s">Are you a current student?</label>
+            <br>
+
+            <div class="form-check">
+              <input class="form-check-input" id="feedback-yes" name="current-s" type="radio" checked>
+              <label class="form-check-label" for="feedback-yes">Yes</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" id="feedback-no" name="current-s" type="radio">
+              <label class="form-check-label" for="feedback-no">No</label>
+            </div>
+          </div>
+          <br>
+
+          <input class="btn btn-primary" type="submit">
+
+
+        </form>
+      </div><!-- end of the form div-->
+
+
+    </div> <!-- end of the row div that has both divs-->
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"></script>
 
-  <div>
-    <br>
-    <label name="current-s">Are you a current student?</label>
-    <br>
-
-    <label for="feedback-yes"></label>
-    <input id="feedback-yes" name="current-s" type="radio" checked>Yes
-
-    <label for="feedback-no"></label>
-    <input id="feedback-no" name="current-s" type="radio">No
-    <br>
-    <input type="submit">
-  </div>
-
-  </form>
 </body>
 
 </html>
